@@ -7,3 +7,4 @@ kirjed - записи (строчки)
 väljad - поля (столбцы)
 andmed - данные
 väärtused - значения
+query (päring) - запрос
