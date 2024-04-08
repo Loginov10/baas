@@ -1,0 +1,9 @@
+andmebaas - база данных
+andmebaaside galdussüsteem - система управления базами данных
+tabel - таблица
+rida - ряд
+veerg - столбик, столбец
+kirjed - записи (строчки)
+väljad - поля (столбцы)
+andmed - данные
+väärtused - значения
