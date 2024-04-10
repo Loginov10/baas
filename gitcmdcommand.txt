@@ -13,3 +13,4 @@ Kogda sohranit fail
 git add .
 git commit -a -m "midagi kirjutada"
 git push
+------
