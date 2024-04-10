@@ -1,0 +1,15 @@
+cd desktop
+
+git init baas
+
+cd baas
+
+git config --global user.name "Artjom Loginov"
+git config --global user.email "Artjomloginov111@gmail.com"
+git config --global --list
+git status
+----
+Kogda sohranit fail
+git add .
+git commit -a -m "midagi kirjutada"
+git push
