@@ -106,3 +106,18 @@ Select * from film;
 End;
 
 exec lisaFilm 'Test' 20, 'Test', 2000;
+
+--proceduur, mis uuendab rezisoori andmed filmiNimi järgi
+
+create procedure uuendaRezisoriFilmis
+@uusrezisoor varchar(50),
+@filmNimetus varchar(50)
+AS
+Begin
+select * from film Where filmnumetus=@filmNimetus;
+Update film Set rezisoor=@uusrezisoor
+Where filmnumetus=@filmNimetus;
+select * from film Where filmnumetus=@filmNimetus;
+End;
+
+exec uuendaRezisoriFilmis 'oskar luts', 'Ariel Fero'
