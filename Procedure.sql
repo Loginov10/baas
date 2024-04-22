@@ -71,3 +71,15 @@ End;
 
 --käivitamine 
 EXEC otsing1Taht 'J';
+
+--protseduur mis kustutab sisestatud id järgi 
+Create procedure kustutaFilm
+@id int
+AS
+Begin
+Select * from film;
+Delete from film Where filmId=@id;
+Select * from film;
+End;
+
+Exec kustutaFilm 42;
