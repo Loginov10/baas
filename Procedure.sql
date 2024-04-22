@@ -60,3 +60,14 @@ insert into film (filmnumetus, kestvus, rezisoor, v_aasta) values ('It Could Hap
 insert into film (filmnumetus, kestvus, rezisoor, v_aasta) values ('Overboard', 139, 'Mollie Greenhead', 2010);
 insert into film (filmnumetus, kestvus, rezisoor, v_aasta) values ('Detour', 100, 'Bibbye Teague', 2007);
 
+--filmiNimetuse otsing esimesed tähe järgi 
+Create Procedure otsing1Taht
+@taht char(1)
+AS
+Begin
+	Select * from film
+	Where filmnumetus Like CONCAT (@taht, '%');
+End;
+
+--käivitamine 
+EXEC otsing1Taht 'J';
