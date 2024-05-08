@@ -343,7 +343,7 @@ as begin
 	select @FirstName = Name from employees where Id = @Id
 end
 
---?
+--käivitame protseduur identifikaatoriga 6, mille annate sisendparameetrina üle, ja salvestame töötaja nimi @FristName
 declare @FirstName nvarchar(50)
 execute spGetNameById1 6, @FirstName output
 print 'Name of the employee = ' + @FirstName
