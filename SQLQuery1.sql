@@ -152,7 +152,7 @@ select * from Person order by Age
 --arvutada kõik inimeste vanused kokku
 select sum(cast(Age as int)) from Person
 
---- kuvab kõige nooremat isikut
+--- kuvab kõige nooremat isikut.
 select min(cast(Age as int)) from Person
 --- kõige vanem isik
 select max(cast(Age as int)) from Person
