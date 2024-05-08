@@ -221,7 +221,7 @@ select * from Employees
 ---näitab nimi ja department id
 select distinct Name, DepartmentId from Employees
 
----?
+---arvutab töötajale palgad 
 select sum(cast(Salary as int)) from Employees
 ---?
 select min(cast(Salary as int)) from Employees
