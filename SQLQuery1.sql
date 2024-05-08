@@ -6,6 +6,7 @@
 
 -- db loomine
 create database LOGITpv22
+-- cntrl + s
 -- git add .
 --git commit -a -m "db loomine"
 
