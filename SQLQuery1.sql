@@ -236,7 +236,7 @@ add DepartmentId
 int null
 
 
---lasada Employees tabelisse middlename sektsioon
+--lisada Employees tabelisse middlename ja lastname sektsioon
 alter table Employees
 add MiddleName nvarchar(30)
 
