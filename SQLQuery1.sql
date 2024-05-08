@@ -218,7 +218,7 @@ values (10, 'Russell', 'Male', 8800, NULL)
 
 select * from Employees
 
----?
+---näitab nimi ja department id
 select distinct Name, DepartmentId from Employees
 
 ---?
