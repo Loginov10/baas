@@ -130,7 +130,7 @@ select * from Person where Email not like '%@%'
 -- ainult üks täht.
 select * from Person where Email like '_@_.com'
 
---?
+--näitab inimesi, kellel on tähed W A S
 select * from Person where Name like '[^WAS]%'
 --- ?
 select * from Person where (City = 'Gotham' or City = 'New York')
